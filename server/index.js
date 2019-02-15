@@ -16,3 +16,5 @@ massive(CONNECTION_STRING).then((dbInstance)=>{
     app.set('db',dbInstance)
     app.listen(3001,()=>{console.log('Ready to Rock on port 3001!')})
 })
+
+app.get('/api/inventory', controller.getInventory)
